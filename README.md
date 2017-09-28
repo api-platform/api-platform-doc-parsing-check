@@ -1,10 +1,10 @@
-### API-Platform Documentation parsing check
+# API-Platform Documentation parsing check
 
 Simple CLI app to check your API-Platform api documentation prior running front-end tools:
 1. @api-platform/client-generator
 2. @api-platform/admin
 
-This is tool is using @api-platform/api-doc-parser library that front-end tools depend on.
+This tool is using @api-platform/api-doc-parser library that front-end tools depend on.
 
 Usage:
 1. clone repo
