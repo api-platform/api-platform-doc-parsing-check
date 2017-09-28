@@ -1,0 +1,50 @@
+{
+  "name": "api-platform-doc-parsing-check",
+  "version": "0.1.0",
+  "description": "API-Platform Documentation parsing check",
+  "files": [
+    "*.md",
+    "lib",
+    "src"
+  ],
+  "main": "lib/index",
+  "repository": "mysiar/api-platform-doc-parsing-check",
+  "homepage": "https://github.com/mysiar/api-platform-doc-parsing-check",
+  "bugs": "https://github.com/mysiar/api-platform-doc-parsing-check/issues",
+  "author": "Piotr Synowiec",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.0",
+    "babel-jest": "^19.0.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.18.0",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^19.0.2",
+    "tmp": "^0.0.31"
+  },
+  "dependencies": {
+    "api-doc-parser": "^0.2",
+    "babel-runtime": "^6.23.0",
+    "commander": "^2.9.0",
+    "isomorphic-fetch": "^2.2.1",
+    "chalk": "^2.1.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src",
+    "build": "babel src -d lib --ignore '*.test.js'",
+    "watch": "babel --watch src -d lib --ignore '*.test.js'",
+    "test-parser": "npm run build && ./lib/index.js  https://demo.api-platform.com"
+  },
+  "bin": {
+    "api-platform-doc-parsing-check": "./lib/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
