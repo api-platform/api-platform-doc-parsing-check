@@ -11,3 +11,7 @@ Usage:
 2. yarn
 3. yarn build
 4. ./lib/index.js
+
+Check Result
+
+![paraing](screen.png)
