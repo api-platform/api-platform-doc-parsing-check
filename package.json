@@ -1,6 +1,6 @@
 {
   "name": "api-platform-doc-parsing-check",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "API-Platform Documentation parsing check",
   "files": [
     "*.md",
