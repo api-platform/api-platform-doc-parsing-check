@@ -1,5 +1,9 @@
 # API-Platform Documentation parsing check
 
+[![Build Status](https://travis-ci.org/mysiar/api-platform-doc-parsing-check.svg?branch=master)](https://travis-ci.org/mysiar/api-platform-doc-parsing-check)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
+
 Simple CLI app to check your API-Platform api documentation prior running front-end tools:
 1. @api-platform/client-generator
 2. @api-platform/admin
