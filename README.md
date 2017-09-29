@@ -1,7 +1,7 @@
 # API-Platform Documentation parsing check
 
-[![Build Status](https://travis-ci.org/mysiar/api-platform-doc-parsing-check.svg?branch=master)](https://travis-ci.org/mysiar/api-platform-doc-parsing-check)
 [![Build Status](https://travis-ci.org/api-platform/api-platform-doc-parsing-check.svg?branch=master)](https://travis-ci.org/api-platform/api-platform-doc-parsing-check)
+[![npm version](https://badge.fury.io/js/%40api-platform%2Fapi-platform-doc-parsing-check.svg)](https://badge.fury.io/js/%40api-platform%2Fapi-platform-doc-parsing-check)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 
