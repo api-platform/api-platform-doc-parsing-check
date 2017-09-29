@@ -1,6 +1,6 @@
 {
-  "name": "api-platform-doc-parsing-check",
-  "version": "0.1.1",
+  "name": "@api-platform/api-platform-doc-parsing-check",
+  "version": "0.1.2",
   "description": "API-Platform Documentation parsing check",
   "files": [
     "*.md",
@@ -8,9 +8,9 @@
     "src"
   ],
   "main": "lib/index",
-  "repository": "mysiar/api-platform-doc-parsing-check",
-  "homepage": "https://github.com/mysiar/api-platform-doc-parsing-check",
-  "bugs": "https://github.com/mysiar/api-platform-doc-parsing-check/issues",
+  "repository": "api-platform/api-platform-doc-parsing-check",
+  "homepage": "https://github.com/api-platform/api-platform-doc-parsing-check",
+  "bugs": "https://github.com/api-platform/api-platform-doc-parsing-check/issues",
   "author": "Piotr Synowiec",
   "license": "MIT",
   "devDependencies": {
