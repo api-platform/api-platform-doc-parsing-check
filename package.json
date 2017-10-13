@@ -39,7 +39,7 @@
     "lint": "eslint src",
     "build": "babel src -d lib --ignore '*.test.js'",
     "watch": "babel --watch src -d lib --ignore '*.test.js'",
-    "test-parser": "npm run build && ./lib/index.js  https://demo.api-platform.com"
+    "test-parser": "npm run build && ./lib/index.js  https://demo.api-platform.com && ./lib/index.js  https://demo.api-platform.com -d /tmp/parsed-docs.json"
   },
   "bin": {
     "api-platform-doc-parsing-check": "./lib/index.js"

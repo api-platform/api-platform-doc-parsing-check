@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import fs from 'fs';
 import 'isomorphic-fetch';
 import program from 'commander';
 import chalk from 'chalk';
@@ -10,6 +11,7 @@ program
   .version(version)
   .description('Check API Hydra documentation parsing')
   .usage('entrypoint')
+  .option('-d, --dump [filename]', 'Dump parsed api documentation')
   .parse(process.argv);
 
 if (1 !== program.args.length ) {
@@ -30,6 +32,14 @@ parseHydraDocumentation(entrypoint).then(api => {
   }
   console.log(endpoints.sort());
   console.log(chalk.green('Number of endpoints parsed : ') + count);
+
+  if(program.dump) {
+    fs.writeFile(program.dump, JSON.stringify(api), (e) => {
+      if(e) throw e;
+      console.log('Parsed api documentation dumped to file : ' + program.dump);
+    });
+  }
+
 }).catch((e) => {
   console.log(e);
 });
