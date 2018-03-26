@@ -6,7 +6,7 @@
 
 Simple CLI app to check your API Platform's API documentation prior to run the frontend tools:
 
-1. [The Alient Generator Component](https://api-platform.com/docs/client-generator)
+1. [The Client Generator Component](https://api-platform.com/docs/client-generator)
 2. [The Admin Component](https://api-platform.com/docs/admin)
 
 This tool is using the [API Doc Parser library](https://github.com/api-platform/api-doc-parser) that frontend tools depend on.
