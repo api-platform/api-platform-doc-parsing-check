@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  ci:
+    name: Continuous integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'current'
+      - name: Install dependencies
+        run: yarn install
+      - name: Check build
+        run: yarn build
+      - name: Check coding standards
+        run: yarn lint
