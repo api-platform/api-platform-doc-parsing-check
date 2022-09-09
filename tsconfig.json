@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "sourceMap": true,
+    "outDir": "./lib",
+    "declaration": true,
+    "declarationMap": true,
+    "rootDir": "./src",
+    "importHelpers": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "src/**/*.test.ts",
+  ],
+  "include": ["./src"]
+}
